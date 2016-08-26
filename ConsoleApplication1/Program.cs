@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication
 {
     // This class is immutable. After an object is created, 
     // it cannot be modified from outside the class. It uses a 
@@ -26,25 +26,7 @@ namespace ConsoleApplication1
     // This class is immutable. After an object is created, 
     // it cannot be modified from outside the class. It uses a 
     // static method and private constructor to initialize its properties.    
-    public class Contact2
-    {
-        // Read-only properties. 
-        public string Name { get; private set; }
-        public string Address { get; private set; }
-
-        // Private constructor. 
-        private Contact2(string contactName, string contactAddress)
-        {
-            Name = contactName;
-            Address = contactAddress;
-        }
-
-        // Public factory method. 
-        public static Contact2 CreateContact(string name, string address)
-        {
-            return new Contact2(name, address);
-        }
-    }
+    
 
     public class Program
     {
